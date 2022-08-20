@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Worthcoding\BootstrapDynamicForms\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class BootstrapDynamicFormsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'bootstrap-dynamic-forms';
 
     public $description = 'My command';
 

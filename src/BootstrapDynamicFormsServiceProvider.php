@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Worthcoding\BootstrapDynamicForms;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Worthcoding\BootstrapDynamicForms\Commands\BootstrapDynamicFormsCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class BootstrapDynamicFormsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('bootstrap-dynamic-forms')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_bootstrap-dynamic-forms_table')
+            ->hasCommand(BootstrapDynamicFormsCommand::class);
     }
 }
